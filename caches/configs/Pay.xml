@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 付费金额 充值类型 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 获得的VIP经验值 
+int int int int int int int int int 
+-->
+<Pay>
+  <row ID="100001" Paynull="0.01" Type="1" Gain="50" FirstGain="0" GiveGain="0" BuyDay="0" Return="0" VipExp="50" />
+  <row ID="100002" Paynull="0.01" Type="1" Gain="100" FirstGain="100" GiveGain="0" BuyDay="0" Return="0" VipExp="100" />
+  <row ID="100003" Paynull="30" Type="1" Gain="300" FirstGain="300" GiveGain="15" BuyDay="0" Return="0" VipExp="300" />
+  <row ID="100004" Paynull="50" Type="1" Gain="500" FirstGain="500" GiveGain="40" BuyDay="0" Return="0" VipExp="500" />
+  <row ID="100005" Paynull="100" Type="1" Gain="1000" FirstGain="1000" GiveGain="120" BuyDay="0" Return="0" VipExp="1000" />
+  <row ID="100006" Paynull="200" Type="1" Gain="2000" FirstGain="2000" GiveGain="360" BuyDay="0" Return="0" VipExp="2000" />
+  <row ID="100007" Paynull="500" Type="1" Gain="5000" FirstGain="5000" GiveGain="1250" BuyDay="0" Return="0" VipExp="5000" />
+  <row ID="100008" Paynull="1000" Type="1" Gain="10000" FirstGain="10000" GiveGain="3000" BuyDay="0" Return="0" VipExp="10000" />
+  <row ID="100009" Paynull="25" Type="2" Gain="300" FirstGain="0" GiveGain="0" BuyDay="30" Return="120" VipExp="250" />
+  <row ID="100010" Paynull="50" Type="3" Gain="600" FirstGain="0" GiveGain="0" BuyDay="90000" Return="100" VipExp="500" />
+</Pay>

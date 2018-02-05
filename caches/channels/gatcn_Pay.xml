@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 连锁ID 名称 付费金额 充值类型 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 获得的VIP经验值 道具ID 充值金额名字 关联未完成任务 关联完成任务 
+int List:int string int int int int int int int int string string int int 
+-->
+<Pay>
+  <row ID="150001" LinkID="110001,130001,170001" Des="港澳台-1USD" Paynull="0.01" Type="1" Gain="60" FirstGain="60" GiveGain="0" BuyDay="0" Return="0" VipExp="60" ItemID="com.foyo.mjsd.60" NameID="PayName110001" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150010" LinkID="110011,130011,170009" Des="港澳台-2USD" Paynull="0.01" Type="1" Gain="120" FirstGain="120" GiveGain="0" BuyDay="0" Return="0" VipExp="240" ItemID="com.foyo.mjsd.120" NameID="PayName110009" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150002" LinkID="110002,130002,170002" Des="港澳台-6USD" Paynull="0.01" Type="1" Gain="360" FirstGain="360" GiveGain="11" BuyDay="0" Return="0" VipExp="360" ItemID="com.foyo.mjsd.360" NameID="PayName110002" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150003" LinkID="110003,130003,170003" Des="港澳台-20USD" Paynull="0.01" Type="1" Gain="1180" FirstGain="1180" GiveGain="71" BuyDay="0" Return="0" VipExp="1180" ItemID="com.foyo.mjsd.1180" NameID="PayName110003" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150004" LinkID="110004,130004,170004" Des="港澳台-30USD" Paynull="0.01" Type="1" Gain="1780" FirstGain="1780" GiveGain="160" BuyDay="0" Return="0" VipExp="1780" ItemID="com.foyo.mjsd.1780" NameID="PayName110004" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150005" LinkID="110005,130005,170005" Des="港澳台-50USD" Paynull="0.01" Type="1" Gain="2980" FirstGain="2980" GiveGain="358" BuyDay="0" Return="0" VipExp="2980" ItemID="com.foyo.mjsd.2980" NameID="PayName110005" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150006" LinkID="110006,130006,170006" Des="港澳台-100USD" Paynull="0.01" Type="1" Gain="5980" FirstGain="5980" GiveGain="897" BuyDay="0" Return="0" VipExp="5980" ItemID="com.foyo.mjsd.5980" NameID="PayName110006" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150007" LinkID="110006,130006,170006" Des="港澳台-170USD" Paynull="0.01" Type="1" Gain="10180" FirstGain="10180" GiveGain="1527" BuyDay="0" Return="0" VipExp="10180" ItemID="com.foyo.mjsd.10180" NameID="PayName110006" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="150008" LinkID="110009,130009,170007" Des="港澳台-8USD月卡" Paynull="0.01" Type="2" Gain="500" FirstGain="0" GiveGain="0" BuyDay="30" Return="150" VipExp="500" ItemID="com.foyo.mjsd.240" NameID="PayName110007" ConnectTask="401001" ConnectTaskClear="401002" />
+  <row ID="150009" LinkID="110010,130010,170008" Des="港澳台-15USD终身卡" Paynull="0.01" Type="3" Gain="980" FirstGain="0" GiveGain="0" BuyDay="90000" Return="100" VipExp="980" ItemID="com.foyo.mjsd.450" NameID="PayName110008" ConnectTask="402001" ConnectTaskClear="402002" />
+  <row ID="150010" LinkID="110011,130011,170009" Des="港澳台-2USD" Paynull="0.01" Type="1" Gain="120" FirstGain="120" GiveGain="0" BuyDay="0" Return="0" VipExp="240" ItemID="com.foyo.mjsd.120" NameID="PayName110009" ConnectTask="0" ConnectTaskClear="0" />
+</Pay>

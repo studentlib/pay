@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 货币单位 付费金额 金额（美元） 充值类型 商品位置 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 角标文字 正常角标文字 商品icon 获得的VIP经验值 道具ID 充值金额名字 
+int string string string int int int int int int int string string string int string string 
+-->
+<Pay>
+  <row ID="100001" Currency="PayUnit100001" Paynull="6" payCount="0.99" Type="1" Part="1" Gain="60" FirstGain="60" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_1" VipExp="60" ItemID="com.qban.rxsg6" NameID="PayName110001" />
+  <row ID="100002" Currency="PayUnit100001" Paynull="30" payCount="4.99" Type="1" Part="2" Gain="300" FirstGain="300" GiveGain="10" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_1" VipExp="300" ItemID="com.qban.rxsg30" NameID="PayName110002" />
+  <row ID="100003" Currency="PayUnit100001" Paynull="98" payCount="14.99" Type="1" Part="3" Gain="1000" FirstGain="1000" GiveGain="50" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_2" VipExp="1000" ItemID="com.qban.rxsg98" NameID="PayName110003" />
+  <row ID="100004" Currency="PayUnit100001" Paynull="198" payCount="29.99" Type="1" Part="4" Gain="2000" FirstGain="2000" GiveGain="200" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_2" VipExp="2000" ItemID="com.qban.rxsg198" NameID="PayName110004" />
+  <row ID="100005" Currency="PayUnit100001" Paynull="328" payCount="49.99" Type="1" Part="5" Gain="3500" FirstGain="3500" GiveGain="400" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_3" VipExp="3500" ItemID="com.qban.rxsg328" NameID="PayName110005" />
+  <row ID="100006" Currency="PayUnit100001" Paynull="648" payCount="99.99" Type="1" Part="6" Gain="7000" FirstGain="7000" GiveGain="1000" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_4" VipExp="7000" ItemID="com.qban.rxsg648" NameID="PayName110006" />
+  <row ID="100009" Currency="PayUnit100001" Paynull="25" payCount="3.99" Type="2" Part="9" Gain="300" FirstGain="0" GiveGain="0" BuyDay="30" Return="150" FirstMark="null" MarkIcon="PayIconDes110004" ItemIcon="SG_UI_BRecharge_3" VipExp="300" ItemID="com.qban.rxsgyueka" NameID="PayName110007" />
+  <row ID="100010" Currency="PayUnit100001" Paynull="68" payCount="9.99" Type="3" Part="10" Gain="800" FirstGain="0" GiveGain="0" BuyDay="90" Return="150" FirstMark="null" MarkIcon="PayIconDes110004" ItemIcon="SG_UI_BRecharge_6" VipExp="800" ItemID="com.qban.rxsgjika" NameID="PayName110008" />
+</Pay>

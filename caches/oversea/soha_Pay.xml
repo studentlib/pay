@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 连锁ID 名称 付费金额 充值类型 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 获得的VIP经验值 道具ID 充值金额名字 关联未完成任务 关联完成任务 
+int List:int string int int int int int int int int string string int int 
+-->
+<Pay>
+  <row ID="120001" LinkID="0,0,0" Des="Sohagame10" Paynull="10" Type="1" Gain="50" FirstGain="50" GiveGain="15" BuyDay="0" Return="0" VipExp="50" ItemID="sg135_sc_10" NameID="PayName110001" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120002" LinkID="0,0,0" Des="Sohagame20" Paynull="20" Type="1" Gain="100" FirstGain="100" GiveGain="30" BuyDay="0" Return="0" VipExp="100" ItemID="sg135_sc_20" NameID="PayName110002" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120003" LinkID="0,0,0" Des="Sohagame30" Paynull="30" Type="1" Gain="150" FirstGain="150" GiveGain="45" BuyDay="0" Return="0" VipExp="150" ItemID="sg135_sc_30" NameID="PayName110003" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120004" LinkID="0,0,0" Des="Sohagame50" Paynull="50" Type="1" Gain="250" FirstGain="250" GiveGain="75" BuyDay="0" Return="0" VipExp="250" ItemID="sg135_sc_50" NameID="PayName110004" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120005" LinkID="0,0,0" Des="Sohagame100" Paynull="100" Type="1" Gain="500" FirstGain="500" GiveGain="150" BuyDay="0" Return="0" VipExp="500" ItemID="sg135_sc_100" NameID="PayName110005" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120006" LinkID="0,0,0" Des="Sohagame200" Paynull="200" Type="1" Gain="1000" FirstGain="1000" GiveGain="300" BuyDay="0" Return="0" VipExp="1000" ItemID="sg135_sc_200" NameID="PayName110006" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120009" LinkID="0,0,0" Des="Sohagame300" Paynull="300" Type="1" Gain="1500" FirstGain="1500" GiveGain="450" BuyDay="0" Return="0" VipExp="1500" ItemID="sg135_sc_300" NameID="PayName110007" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120010" LinkID="0,0,0" Des="Sohagame500" Paynull="500" Type="1" Gain="2500" FirstGain="2500" GiveGain="750" BuyDay="0" Return="0" VipExp="2500" ItemID="sg135_sc_500" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120011" LinkID="0,0,0" Des="Sohagame1000" Paynull="1000" Type="1" Gain="5000" FirstGain="5000" GiveGain="1500" BuyDay="0" Return="0" VipExp="5000" ItemID="sg135_sc_1000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120012" LinkID="0,0,0" Des="Sohagame2000" Paynull="2000" Type="1" Gain="10000" FirstGain="10000" GiveGain="3000" BuyDay="0" Return="0" VipExp="10000" ItemID="sg135_sc_2000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120013" LinkID="0,0,0" Des="Sohagame5000" Paynull="5000" Type="1" Gain="25000" FirstGain="25000" GiveGain="7500" BuyDay="0" Return="0" VipExp="25000" ItemID="sg135_sc_5000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120014" LinkID="0,0,0" Des="Sohagame10000" Paynull="10000" Type="1" Gain="50000" FirstGain="50000" GiveGain="15000" BuyDay="0" Return="0" VipExp="50000" ItemID="sg135_sc_10000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120015" LinkID="0,0,0" Des="Sohagame20000" Paynull="20000" Type="1" Gain="100000" FirstGain="100000" GiveGain="30000" BuyDay="0" Return="0" VipExp="100000" ItemID="sg135_sc_20000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120016" LinkID="0,0,0" Des="Sohagame50000" Paynull="50000" Type="1" Gain="250000" FirstGain="250000" GiveGain="75000" BuyDay="0" Return="0" VipExp="250000" ItemID="sg135_sc_50000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120017" LinkID="0,0,0" Des="Sohagame3000" Paynull="3000" Type="1" Gain="15000" FirstGain="15000" GiveGain="4500" BuyDay="0" Return="0" VipExp="15000" ItemID="sg135_sc_3000" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120018" LinkID="0,0,0" Des="Apple Store14" Paynull="14" Type="1" Gain="70" FirstGain="70" GiveGain="21" BuyDay="0" Return="0" VipExp="70" ItemID="vn.sohagame.sg135.tuixu1" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120019" LinkID="0,0,0" Des="Apple Store70" Paynull="70" Type="1" Gain="350" FirstGain="350" GiveGain="105" BuyDay="0" Return="0" VipExp="350" ItemID="vn.sohagame.sg135.tuixu2" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120020" LinkID="0,0,0" Des="Apple Store700" Paynull="700" Type="1" Gain="3500" FirstGain="3500" GiveGain="1050" BuyDay="0" Return="0" VipExp="3500" ItemID="vn.sohagame.sg135.tuixu3" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120021" LinkID="0,0,0" Des="Google billing14" Paynull="14" Type="1" Gain="70" FirstGain="70" GiveGain="21" BuyDay="0" Return="0" VipExp="70" ItemID="sg135shgameproduct1" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120022" LinkID="0,0,0" Des="Google billing70" Paynull="70" Type="1" Gain="350" FirstGain="350" GiveGain="105" BuyDay="0" Return="0" VipExp="350" ItemID="sg135shgameproduct2" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120023" LinkID="0,0,0" Des="Google billing700" Paynull="700" Type="1" Gain="3500" FirstGain="3500" GiveGain="1050" BuyDay="0" Return="0" VipExp="3500" ItemID="sg135shgameproduct3" NameID="PayName110008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120024" LinkID="0,0,0" Des="Sohagame月卡" Paynull="100" Type="2" Gain="500" FirstGain="500" GiveGain="150" BuyDay="30" Return="120" VipExp="500" ItemID="sg135_mc_100" NameID="PayName110007" ConnectTask="401001" ConnectTaskClear="401002" />
+  <row ID="120025" LinkID="0,0,0" Des="Sohagame年卡" Paynull="600" Type="3" Gain="3000" FirstGain="3000" GiveGain="900" BuyDay="360" Return="100" VipExp="3000" ItemID="sg135_mc_600" NameID="PayName110008" ConnectTask="402001" ConnectTaskClear="402002" />
+</Pay>

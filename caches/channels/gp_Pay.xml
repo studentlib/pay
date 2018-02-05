@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 货币单位 付费金额 付费金额 充值类型 商品位置 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 角标文字 正常角标文字 商品icon 获得的VIP经验值 道具ID 充值金额名字 
+int string int string int int int int int int int string string string int string string 
+-->
+<Pay>
+  <row ID="110001" Currency="PayUnit100001" Paynull="240" payCount="1.99" Type="1" Part="1" Gain="120" FirstGain="120" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_1" VipExp="120" ItemID="com.gamecaff.tkhero.120" NameID="PayName110001" />
+  <row ID="110002" Currency="PayUnit100001" Paynull="1200" payCount="9.99" Type="1" Part="2" Gain="600" FirstGain="600" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_1" VipExp="600" ItemID="com.gamecaff.tkhero.600" NameID="PayName110002" />
+  <row ID="110003" Currency="PayUnit100001" Paynull="2400" payCount="19.99" Type="1" Part="3" Gain="1200" FirstGain="1200" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_2" VipExp="1200" ItemID="com.gamecaff.tkhero.1200" NameID="PayName110003" />
+  <row ID="110004" Currency="PayUnit100001" Paynull="3600" payCount="29.99" Type="1" Part="4" Gain="1800" FirstGain="1800" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_2" VipExp="1800" ItemID="com.gamecaff.tkhero.1800" NameID="PayName110004" />
+  <row ID="110005" Currency="PayUnit100001" Paynull="6000" payCount="49.99" Type="1" Part="5" Gain="3000" FirstGain="3000" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_3" VipExp="3000" ItemID="com.gamecaff.tkhero.3000" NameID="PayName110005" />
+  <row ID="110006" Currency="PayUnit100001" Paynull="11800" payCount="99.99" Type="1" Part="6" Gain="6200" FirstGain="6200" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_4" VipExp="6200" ItemID="com.gamecaff.tkhero.6200" NameID="PayName110006" />
+  <row ID="110007" Currency="PayUnit100001" Paynull="21800" payCount="179.99" Type="1" Part="7" Gain="11200" FirstGain="11200" GiveGain="0" BuyDay="0" Return="0" FirstMark="PayIconDes110001" MarkIcon="null" ItemIcon="SG_UI_BRecharge_5" VipExp="11200" ItemID="com.gamecaff.tkhero.11200" NameID="PayName110009" />
+  <row ID="110009" Currency="PayUnit100001" Paynull="600" payCount="4.99" Type="2" Part="9" Gain="300" FirstGain="300" GiveGain="0" BuyDay="30" Return="150" FirstMark="null" MarkIcon="PayIconDes110004" ItemIcon="SG_UI_BRecharge_3" VipExp="300" ItemID="com.gamecaff.tkhero.300" NameID="PayName110007" />
+  <row ID="110010" Currency="PayUnit100001" Paynull="1800" payCount="14.99" Type="3" Part="10" Gain="900" FirstGain="900" GiveGain="0" BuyDay="90" Return="160" FirstMark="null" MarkIcon="PayIconDes110004" ItemIcon="SG_UI_BRecharge_6" VipExp="900" ItemID="com.gamecaff.tkhero.900" NameID="PayName110008" />
+</Pay>

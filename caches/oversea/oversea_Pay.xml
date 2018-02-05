@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 付费金额 充值类型 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 获得的VIP经验值 道具ID 充值金额名字 关联未完成任务 关联完成任务 
+int int int int int int int int int string string int int 
+-->
+<Pay>
+  <row ID="400001" Paynull="5" Type="1" Gain="50" FirstGain="0" GiveGain="0" BuyDay="0" Return="0" VipExp="50" ItemID="sbdsg_5" NameID="PayName120001" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400002" Paynull="10" Type="1" Gain="100" FirstGain="100" GiveGain="0" BuyDay="0" Return="0" VipExp="100" ItemID="sbdsg_10" NameID="PayName120002" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400003" Paynull="30" Type="1" Gain="300" FirstGain="300" GiveGain="15" BuyDay="0" Return="0" VipExp="300" ItemID="sbdsg_30" NameID="PayName120003" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400004" Paynull="50" Type="1" Gain="500" FirstGain="500" GiveGain="30" BuyDay="0" Return="0" VipExp="500" ItemID="sbdsg_50" NameID="PayName120004" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400005" Paynull="100" Type="1" Gain="1000" FirstGain="1000" GiveGain="80" BuyDay="0" Return="0" VipExp="1000" ItemID="sbdsg_100" NameID="PayName120005" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400006" Paynull="200" Type="1" Gain="2000" FirstGain="2000" GiveGain="240" BuyDay="0" Return="0" VipExp="2000" ItemID="sbdsg_200" NameID="PayName120006" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400007" Paynull="500" Type="1" Gain="5000" FirstGain="5000" GiveGain="1000" BuyDay="0" Return="0" VipExp="5000" ItemID="sbdsg_500" NameID="PayName120007" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400008" Paynull="1000" Type="1" Gain="10000" FirstGain="10000" GiveGain="2500" BuyDay="0" Return="0" VipExp="10000" ItemID="sbdsg_1000" NameID="PayName120008" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="400009" Paynull="25" Type="2" Gain="300" FirstGain="0" GiveGain="0" BuyDay="30" Return="120" VipExp="300" ItemID="sbdsg_yueka" NameID="PayName120009" ConnectTask="401001" ConnectTaskClear="401002" />
+  <row ID="400010" Paynull="50" Type="3" Gain="600" FirstGain="0" GiveGain="0" BuyDay="90000" Return="100" VipExp="600" ItemID="sbdsg_zzk" NameID="PayName120010" ConnectTask="402001" ConnectTaskClear="402002" />
+</Pay>

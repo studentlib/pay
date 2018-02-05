@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ID 名称 付费金额 充值类型 获得元宝 首次购买额外获得 常规购买额外获得 买断天数 上线返还 获得的VIP经验值 道具ID 充值金额名字 关联未完成任务 关联完成任务 
+int string int int int int int int int int string string int int 
+-->
+<Pay>
+  <row ID="120001" Des="东南亚IOS正版-1USD" Paynull="1" Type="1" Gain="60" FirstGain="60" GiveGain="0" BuyDay="0" Return="0" VipExp="60" ItemID="60" NameID="PayName110001" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120002" Des="东南亚IOS正版-5USD" Paynull="5" Type="1" Gain="300" FirstGain="300" GiveGain="0" BuyDay="0" Return="0" VipExp="300" ItemID="300" NameID="PayName110002" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120003" Des="东南亚IOS正版-10USD" Paynull="10" Type="1" Gain="600" FirstGain="600" GiveGain="30" BuyDay="0" Return="0" VipExp="600" ItemID="600" NameID="PayName110003" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120004" Des="东南亚IOS正版-20USD" Paynull="20" Type="1" Gain="1200" FirstGain="1200" GiveGain="120" BuyDay="0" Return="0" VipExp="1200" ItemID="1200" NameID="PayName110004" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120005" Des="东南亚IOS正版-50USD" Paynull="50" Type="1" Gain="3000" FirstGain="3000" GiveGain="600" BuyDay="0" Return="0" VipExp="3000" ItemID="3000" NameID="PayName110005" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120006" Des="东南亚IOS正版-100USD" Paynull="100" Type="1" Gain="6000" FirstGain="6000" GiveGain="1200" BuyDay="0" Return="0" VipExp="6000" ItemID="6000" NameID="PayName110006" ConnectTask="0" ConnectTaskClear="0" />
+  <row ID="120009" Des="东南亚IOS正版-6USD月卡" Paynull="6" Type="2" Gain="360" FirstGain="0" GiveGain="0" BuyDay="30" Return="120" VipExp="360" ItemID="360" NameID="PayName110007" ConnectTask="401001" ConnectTaskClear="401002" />
+  <row ID="120010" Des="东南亚IOS正版-12USD终身卡" Paynull="12" Type="3" Gain="720" FirstGain="0" GiveGain="0" BuyDay="90000" Return="100" VipExp="720" ItemID="720" NameID="PayName110008" ConnectTask="402001" ConnectTaskClear="402002" />
+</Pay>
