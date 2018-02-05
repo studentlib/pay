@@ -15,5 +15,5 @@ $_GET['m']='paycenter';
 $_GET['c']='android';
 $_GET['a']='one';
 pc_base::creat_app();
-
+//拉拉拉啊拉
 ?>
