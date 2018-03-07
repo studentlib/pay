@@ -1078,22 +1078,17 @@ class pay
      */
     protected function sendToGS($ip, $port, $data)
     {
-        //      $this->__log("CHARGESERVER RETURN print:".$data);
         $keys = pc_base::load_config('gs_keys');
         $key = $keys['s' . $data['serverid']];
         $itemids = 0;
-        $paytyps = 2;
+        $paytyps = 0;
+        //0 : 普通充值 1 = 第三方自由额度充值  2  = WEB充值  
         $skey = hash_hmac('md5', $data['role_id'] . $data['area_id'] . $data['amount'] . $itemids . $paytyps . $data['currency_num'] . $data['orderid'], $key, TRUE);
-        #return $data['serverid'];//.$data['amount'].$data['itemid'].$data['paytype'].$data['gold'].$data['orderid'];
         $pkfmt = 'IISSIIIIIfIIIa64a64';
         $upkfmt = 'Isize/Imagic/Stype/Scmd/Ieno/Ipf/Ips';
         $data = pack($pkfmt, 168, 0xF1E2D3C4, 0x01, 0xD805, 0, 0, 0, $data['roleid'], $data['zoneid'], $data['amount'], $itemids, $paytyps, $data['currency_num'], $data['orderid'], $skey);
-//         $skey=hash_hmac('md5', $data['uid'].$data['serverid'].$data['amount'].$data['itemid'].$data['orderid'], $key,TRUE);
-//         $pkfmt='IISSIIIIIfIa64a64II';
-//         $upkfmt='Isize/Imagic/Stype/Scmd/Ieno/Ipf/Ips';
-//         $data=pack($pkfmt,168,0xF1E2D3C4,0x01,0xD805,0,0,0,$data['uid'],$data['serverid'],$data['amount'],$data['itemid'],$data['orderid'],$skey,$data['paytype'],$data['gold']);
         $timeout = 5;
-        //      $this->__log("START CONNECT TO CHARGESERVER@".$ip.':'.$port);
+             $this->__log("START CONNECT TO CHARGESERVER@".$ip.':'.$port);
         $sock = fsockopen($ip, (int)$port, $errno, $errstr, $timeout);
         stream_set_blocking($sock, 0);
         if ($sock) {
@@ -1104,7 +1099,7 @@ class pay
                 $rdata = fread($sock, 1024);
                 if ($rdata) {
                     $data = unpack($upkfmt, $rdata);
-//                    $this->__log("CHARGESERVER RETURN:" . $data['eno']);
+                   $this->__log("CHARGESERVER RETURN:" . $data['eno']);
                     if ($data['eno'] == 0) {
                         return 0;
                     } else {
@@ -1114,9 +1109,9 @@ class pay
                 }
                 usleep(20000);
             }
-            //        $this->__log("WAIT CHARGE SERVER TIMEOUT");
+                   $this->__log("WAIT CHARGE SERVER TIMEOUT");
         } else {
-            //       $this->__log("CHARGE SERVER OFFLINE");
+                  $this->__log("CHARGE SERVER OFFLINE");
             return 1;
         }
         return -1;

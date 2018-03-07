@@ -99,7 +99,7 @@ class daemon extends pay
                 }
                 $this->__log("SEND TO CHARGE SERVER");
                 $ret = $this->sendToGS($server['CIP'], $server['CPort'], $v);
-
+                //55298 : 签名错误 检查key 游戏服pay表是否一直   
                 if ($ret == 0) {
                     $this->_orders->setTable($table);
                     $this->_orders->insert($v);

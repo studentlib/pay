@@ -162,13 +162,9 @@ while(1)
         __log("start check order:".$v['orderid']);
         $local_data=getTicket($v['ticket']);
         $local_ticket=getTicket($local_data['purchase-info'],TRUE);
-    
-    //
-//    $local_data_orderinfo=json_decode($v['orderinfo'], true);
-    //var_dump($local_data_orderinfo);
         $local_data_orderitemid=$server[0]['itemid'];	
         $local_data_ticketsitemid=$prodectmaptoitem[$local_ticket['product_id']];   
-//如果购买时间比订单发起时间还早直接跳过
+        //如果购买时间比订单发起时间还早直接跳过
         if($local_ticket['bid']!=$bid||!in_array($local_ticket['product_id'],$productions)||
         (time()-($local_ticket['purchase_date_ms']/1000))>DAY_SECONDS*5 ){
             __log("Before Check Wrong Ticket");
@@ -176,14 +172,14 @@ while(1)
             query(sprintf("update %s set `status`='%d' where `orderid`='%s'",MYSQL_TABLE,-1,$v['orderid']));
             continue;
         }
-//物品id不匹配跳过
-    if($local_data_orderitemid != $local_data_ticketsitemid){
-        __log(" checkitem Before Check Wrong Ticket not the same item id from orders and tickets table ");
-            __log(print_r($local_ticket,1));
-            query(sprintf("update %s set `status`='%d' where `orderid`='%s'",MYSQL_TABLE,-1,$v['orderid']));
-        __log(" checkitem orderinfo itemdid:".$local_data_orderitemid."ticketitemid:".$local_data_ticketsitemid);
-        continue;
-    }
+        //物品id不匹配跳过
+        if($local_data_orderitemid != $local_data_ticketsitemid){
+            __log(" checkitem Before Check Wrong Ticket not the same item id from orders and tickets table ");
+                __log(print_r($local_ticket,1));
+                query(sprintf("update %s set `status`='%d' where `orderid`='%s'",MYSQL_TABLE,-1,$v['orderid']));
+            __log(" checkitem orderinfo itemdid:".$local_data_orderitemid."ticketitemid:".$local_data_ticketsitemid);
+            continue;
+        }
         
         $st=microtime(true);
         $ret=check_tickets($v['ticket'],$production);

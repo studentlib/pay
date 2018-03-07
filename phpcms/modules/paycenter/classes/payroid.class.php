@@ -31,7 +31,7 @@ class payroid extends pay
         }
 //        file_put_contents('appstore.log', print_r($myorder,1).$amount.print_r($config,1),FILE_APPEND);
         //注意这里比较金额要乘以兑换比例 每个渠道的兑换比例不同
-        if (isset($myorder['amount']) && $myorder['amount'] != $amount) {
+        if (isset($myorder['amount']) && $myorder['amount'] != $amount) {// * $config['Ratio']) {
             return array('ret' => 8, 'msg' => '订单金额和对应商品价格不匹配');
         }
 
@@ -649,18 +649,26 @@ class payroid extends pay
             $this->_logOrder($order, $ret['ret'], $subchannel);
             return $ret;
         }
-        $data = array('channel' => $subchannel,
-            'serverid' => $ret['myorder']['serverid'],
-            'account' => $ret['myorder']['account'],
+        //充值表pay 的信息
+        $items = $this->_getPayConfig($channel);
+        $data = array(
+            'channel' => $channel,//渠道
+            'subchannel' => $subchannel, //分渠道
+            'serverid' => $ret['myorder']['serverid'],//游戏服务器编号
+            'account' => $ret['myorder']['account'],//游戏账号
             'uid' => $ret['account']['ID'],
-            'orderid' => $order['tcd'],
+            'orderid' => $ret['myorder']['orderid'],//充值中心生成的订单号
             'url' => $_SERVER['REQUEST_URI'],
-            'billno' => $order['cbi'],
-            'itemid' => $ret['myorder']['itemid'],
-            'amount' => $ret['myorder']['amount'],
-            'time' => $ret['myorder']['ctime'],
-            'ts' => time(),
-            'status' => 0,
+            'billno' => $order['cbi'],//平台订单号
+            'itemid' => $ret['myorder']['itemid'],//商品编号（我方）
+            'product_id' => '',//商品编号（平台） ,没有就为空
+            'amount' => $ret['myorder']['amount'],//商品金额
+            'dollar' => $items[$ret['myorder']['itemid']]['payCount'],//商品金额（美元）
+            'gold' => (int)$items[$ret['myorder']['itemid']]['Gain'],//获得元宝数
+            'ts' => time(),//平台提交订单时间
+            'time' => date('Y-m-d H:i:s', $ret['myorder']['ctime']),//发起时间
+            'status' => 0,//订单处理状态
+            'sign' => $order['sign'],//签名,没有就为空
         );
         $this->_orders->insert($data);
         $order['orderid'] = $order['tcd'];

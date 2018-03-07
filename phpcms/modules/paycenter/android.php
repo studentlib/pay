@@ -1132,7 +1132,7 @@ class android extends payroid
             echo('FAILED');
         }
 
-        if ($this->_check_yijie_orders($data, $channel, $this->_yijie_order_params)) {
+        if ($this->_check_yijie_orders($data, $channel, $this->_yijie_order_params)&&$data['st']==1) {
             $subchannel = 'no_channel';
             if (isset($data['sdk']) && isset($this->_yj_channels[$data['sdk']])) {
                 $subchannel = $this->_yj_channels[$data['sdk']];
